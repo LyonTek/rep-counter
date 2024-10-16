@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* This is like choosing what kind of handwriting to use */
+    font-weight: bold; /* This makes the words look thicker */
+    text-align: center; /* This puts all the words in the middle */
+    min-height: 100vh; /* This makes sure the page is at least as tall as your screen */
+    display: flex; /* These next three lines are like telling everything to stand in a line from top to bottom */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* This tells everything to stand in the middle left to right */
+}
+
+/* This is for the box that holds all the words and buttons */
+.content-wrapper {
+    max-width: 80%; /* This makes sure the box isn't too wide, only 80% of the screen */
+    margin: 20px auto; /* This puts the box in the middle of the screen */
+    border: 3px solid black; /* This draws a thick black line around the box, like a picture frame */
+    background-color: rgba(255, 255, 255, 0.7); /* This makes a see-through white box so you can read the words easily */
+    padding: 20px; /* This adds some space inside the box */
+    border-radius: 10px; /* This makes the corners of the box round */
+}
+
+/* This is like adding a picture behind everything else */
+body::before {
+    content: "";
+    background-image: url("weights-cartoon.png"); /* This tells the computer which picture to use */
+    background-size: contain; /* This makes sure the whole picture fits without getting stretched */
+    background-position: center; /* This puts the picture in the middle */
+    background-repeat: no-repeat; /* This tells the picture not to repeat */
+    position: fixed; /* These next five lines make sure the picture stays in place and covers the whole screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* This makes sure the picture stays behind all the other stuff */
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: #FB5607;
+}
+
+#save-btn {
+    background: #3A86FF;
+    
+}
+
+#save-el {          
+    font-weight: bold;
+}
